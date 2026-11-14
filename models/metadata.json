@@ -1,0 +1,36 @@
+{
+  "selected_model": "Logistic Regression",
+  "features": [
+    "attendance_rate",
+    "assignment_completion",
+    "previous_avg_score",
+    "score_trend",
+    "missed_assignments",
+    "study_hours_per_week"
+  ],
+  "target": "at_risk",
+  "target_definition": "1 if next assessment score is below 50, else 0",
+  "risk_threshold": 0.5,
+  "random_seed": 42,
+  "split": "Train: terms 1-2; validation: term 3; held-out test: term 4",
+  "test_metrics": {
+    "Dummy baseline": {
+      "accuracy": 0.6908,
+      "precision": 0.6908,
+      "recall": 1.0,
+      "f1": 0.8171
+    },
+    "Logistic Regression": {
+      "accuracy": 0.8092,
+      "precision": 0.9032,
+      "recall": 0.8107,
+      "f1": 0.8545
+    },
+    "Random Forest": {
+      "accuracy": 0.7985,
+      "precision": 0.863,
+      "recall": 0.8419,
+      "f1": 0.8523
+    }
+  }
+}

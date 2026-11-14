@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+.env
+*.pyc
+data/*.csv
+models/*.joblib
+reports/figures/*.png
+reports/metrics.json
+reports/model_comparison.csv
